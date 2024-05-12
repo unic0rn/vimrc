@@ -13,9 +13,6 @@
 [submodule "bundle/vim-bufkill"]
 	path = bundle/vim-bufkill
 	url = https://github.com/qpkorr/vim-bufkill
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bundle/vim-devicons"]
 	path = bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
@@ -37,3 +34,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/unic0rn/vim-colors-solarized
