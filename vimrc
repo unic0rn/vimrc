@@ -37,7 +37,34 @@ if !exists('g:airline_symbols')
 endif 
 let g:airline_symbols.maxlinenr=''
 
-let g:startify_custom_header=['']
+nnoremap <C-t> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = "\uf054"
+let g:NERDTreeDirArrowCollapsible = "\uf078"
+let g:NERDTreeShowHidden = 1
+
+autocmd VimEnter *
+            \   if !argc()
+            \ |   Startify
+            \ |   NERDTree
+            \ |   wincmd w
+            \ | endif
+
+let g:startify_custom_header = ['']
+let g:startify_session_dir = '~/.vim/session'
+let g:startify_session_autoload = 0
+let g:startify_session_persistence = 0
+let g:startify_session_delete_buffers = 1
+let g:startify_change_to_dir = 0
+let g:startify_enable_special = 0
+
+let g:startify_files_number = 3
+let g:startify_lists = [
+      \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+      \ { 'type': 'files',     'header': ['   MRU']            },
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
 
 nmap \\ :Startify<cr>
 nmap \n :enew<cr>
