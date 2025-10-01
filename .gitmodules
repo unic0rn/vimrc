@@ -40,3 +40,12 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/unic0rn/nerdtree
+[submodule "bundle/tokyonight.nvim"]
+	path = bundle/tokyonight.nvim
+	url = https://github.com/folke/tokyonight.nvim.git
+[submodule "bundle/lightline.vim"]
+	path = bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "bundle/lualine.nvim"]
+	path = bundle/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim.git
